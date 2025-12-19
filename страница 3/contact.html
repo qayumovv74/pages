@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="icon" type="image/png" href="img/Emblem_of_Tajikistan.svg.png">
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Book tour in Tajikistan</h1>
+        <img src="img/Emblem_of_Tajikistan.svg.png">
+        <ul class="list">
+           <a href="index.html" class="logotype">Home</a>
+        </ul>
+        <table class="booking-table">
+            <tr>
+                <td>
+                    <button onclick="showBookingForm()">Book tour</button>
+                </td>
+            </tr>
+        </table>
+        <div id="booking-form" class="hidden">
+            <form>
+                <label for="name">FIO:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Contacts:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="pricelist">Price-list of tours:</label>
+                <select id="pricelist" name="pricelist" required>
+                   <option value="1000">1000$</option>
+                   <option value="2000">2000$</option>
+                   <option value="3000">3000$</option>
+                </select><br>
+                <button1 type="button1" onclick="bookTour()">Book</button1>
+            </form>
+        </div>
+        <p id="error-message" style="color:red; display:none;">
+        Please fill in the input fields!
+        </p>
+        <p id="booking-confirmation" class="hidden">Your tour has been successfully booked!</p>
+    </div>
+    <aside class="aside">
+        <div class="block1">
+            <p>Our contact number: <a href="tel:+7(981)1057444" class="button">+7(981)105 74 44</a></p>
+            <p>Our mail: <a href="mailto:k.abdu7444@mail.ru" class="button">k.abdu7444@mail.ru</a></p>
+            <p>Our social networks:</p>
+            <div class="social-icons">
+                <a href="https://vk.com/qayumovv_o6" target="_blank">
+                    <img src="img/free-png.ru-307-170x170.png" alt="VK" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/qayumovv_o6?igsh=MWpsODFsY3kzejJyZg==" target="_blank">
+                    <img src="img/unnamed.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+            <p>Address: 29k1 Udarnikov Avenue, Saint Petersburg</p>
+        </div>
+    </aside>
+<footer class="footer">
+  <p>&copy; 2025.Design By Qayumovv Abdulmutallib Abdulatifovich. Все права защищены.</p>
+</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
